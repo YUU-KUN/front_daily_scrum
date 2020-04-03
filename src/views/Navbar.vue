@@ -21,15 +21,14 @@
 
               <ul class="navbar-nav navbar-nav-right">
                 <li class="nav-item nav-profile dropdown">
-                  <!-- <a
+                  <a
                     class="nav-link dropdown-toggle"
+                    v-if="isLoggedIn" @click="logout"
                     href="#"
                     data-toggle="dropdown"
                     id="profileDropdown"
-                  >Hi, Siswa</a> -->
-                  <b-nav-item v-if="isLoggedIn" @click="logout" class="nav-link"><i class="mdi mdi-logout text-primary"></i> 
-                  Logout</b-nav-item>
-                  <!-- <div
+                  >Hi, Siswa</a>
+                  <div
                     class="dropdown-menu dropdown-menu-right navbar-dropdown"
                     aria-labelledby="profileDropdown"
                   >
@@ -37,7 +36,9 @@
                       <i class="mdi mdi-logout text-primary"></i>
                       Logout
                     </a>
-                  </div> -->
+                  </div>
+                  <!-- <b-nav-item v-if="isLoggedIn" @click="logout" class="nav-link"><i class="mdi mdi-logout text-primary"></i> 
+                  Logout</b-nav-item> -->
                 </li>
               </ul>
               <button

@@ -147,6 +147,12 @@ export default {
         .dispatch("register", { Firstname, Lastname, email, password, password_verify })
         .then(() => this.$router.push("/login"))
         .catch(err => console.log(err));
+        // if (response.error) {
+        //   this.$router.push("/login")
+        // } 
+        // else{
+        //   this.$router.push("/login")
+        // }
     }
   }
 };

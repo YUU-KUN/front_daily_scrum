@@ -33,7 +33,7 @@
                           <span class="glyphicon glyphicon-trash ">HAPUS</span>
                         </b-button> -->
                           <b-button size="sm" variant="danger" v-on:click="Drop(data.item.id)">
-                      <i class="mdi mdi-delete btn-icon-prepend"></i> Hapus
+                      <i class="mdi mdi-delete btn-icon-prepend"></i> 
                     </b-button>
                       </template>
                     </b-table>
