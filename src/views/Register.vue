@@ -27,7 +27,7 @@
                         class="form-control form-control-lg border-left-0"
                         id="firstname"
                         name="Firstname"
-                        placeholder="First Name"
+                        placeholder="Nama Depan"
                         required
                       />
                     </div>
@@ -45,7 +45,7 @@
                         class="form-control form-control-lg border-left-0"
                         id="lastname"
                         name="Lastname"
-                        placeholder="Last Name"
+                        placeholder="Nama Belakang"
                         required
                       />
                     </div>
@@ -81,7 +81,7 @@
                         class="form-control form-control-lg border-left-0"
                         name="password"
                         id="password"
-                        placeholder="New Password"
+                        placeholder="Password Baru"
                         required
                       />
                     </div>
@@ -99,7 +99,7 @@
                         class="form-control form-control-lg border-left-0"
                         name="password_verify"
                         id="password_verify"
-                        placeholder="Retype Your New Password"
+                        placeholder="Konfirmasi Password"
                         required
                       />
                     </div>
@@ -109,7 +109,7 @@
                       type="submit"
                       name="submit"
                       class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn"
-                      value="REGISTER"
+                      value="DAFTAR"
                     />
                   </div>
                 </form>

@@ -168,7 +168,7 @@ module.exports = {
   data: function() {
     return {
       search: "",
-      id: "",
+      tanggal: "",
       id_users: "",
       activity_yesterday: "",
       activity_today: "",
@@ -200,7 +200,7 @@ module.exports = {
             this.rows = response.data.count;
           } else {
             this.$bvToast.hide("loadingToast");
-            this.message = "Gagal menampilkan data Scrum.";
+            this.message = "Yahh.. Datanya gagal ditampilin nih...";
             this.$bvToast.show("message");
             this.$router.push({ name: "login" });
           }
@@ -243,7 +243,7 @@ module.exports = {
       this.$bvToast.show("loadingToast");
       if (this.action === "insert") {
         let form = new FormData();
-        form.append("tanggal", this.id);
+        form.append("tanggal", this.tanggal);
         form.append("id_users", this.id_users);
         form.append("team", this.team);
         form.append("activity_yesterday", this.activity_yesterday);
@@ -273,7 +273,7 @@ module.exports = {
           });
       } else {
         let form = {
-          tanggal: this.id,
+          tanggal: this.tanggal,
           activity_yesterday: this.activity_yesterday,
           activity_today: this.activity_today,
           problem_yesterday: this.problem_yesterday,
@@ -299,7 +299,7 @@ module.exports = {
 
     Drop: function(id) {
       let conf = { headers: { Authorization: "Bearer " + this.key } };
-      if (confirm("Apakah anda yakin ingin menghapus data ini?")) {
+      if (confirm("Yakin ingin menghapus data ini?")) {
         this.$bvToast.show("loadingToast");
         this.axios
           .delete("/dailyscrum/" + id, conf)
